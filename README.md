@@ -1,6 +1,6 @@
 # Customer Churn Prediction Using PySpark
 
-This project uses Apache Spark ML to predict customer churn from telecom customer behavior data. It started from the BDM Term 3 Python coursework notebook and is organized here as a clean portfolio repository with a reproducible training script.
+This project uses Apache Spark ML to predict customer churn from telecom customer behavior data. It started from the BDM Term 3 Python coursework notebook and is organized here as a clean portfolio repository with a reproducible training script that is also straightforward to port into Azure Databricks notebook or job workflows.
 
 ## What It Covers
 
@@ -10,6 +10,7 @@ This project uses Apache Spark ML to predict customer churn from telecom custome
 - Vector assembly for Spark ML models
 - Logistic Regression, Random Forest, and Gradient-Boosted Tree classifiers
 - Accuracy, F1, weighted precision/recall, and area-under-ROC comparison
+- Standard Spark ML pipeline patterns that map cleanly to Databricks clusters and notebooks
 
 ## Source Materials
 
@@ -44,4 +45,4 @@ python src/train_churn_pyspark.py --train-csv data/raw/churn-bigml-80.csv --test
 
 ## Notes
 
-This is a coursework analytics project intended to demonstrate PySpark ML workflow design. It is not a production churn system, but it is structured so it can be extended with model persistence, batch scoring, and dashboard reporting.
+This is a coursework analytics project intended to demonstrate PySpark ML workflow design. It is not a production churn system, but it is structured so it can be extended with model persistence, batch scoring, dashboard reporting, and Azure Databricks execution for larger-scale experimentation.
